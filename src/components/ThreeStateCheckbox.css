@@ -1,0 +1,40 @@
+.neutral {
+  background-color: #C4C4C4;
+  border: solid 1px #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  
+}
+
+.positive {
+  background-color: #68DB40;
+  border: solid 1px #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+}
+
+.negative {
+  background-color: #F86767;
+  border: solid 1px #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+}
+
+.boxC{
+  width: 100%;
+  background-color: #FED124;
+  border-radius: 12px;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  
+}

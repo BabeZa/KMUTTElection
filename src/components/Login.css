@@ -1,0 +1,89 @@
+body{
+    background-color: #FED124;
+}
+
+select{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+option{
+    background-color: #FED124;
+    Border: none;
+    margin-left: 100px;
+    outline: none !important;
+}
+
+option:hover{
+    background-color: white;
+}
+
+
+.texta{
+    font-size: 18px;
+}
+.textl{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration-line: underline;
+}
+.textb{
+    font-size: 25px;
+    
+}
+
+.Login{
+    font-family: Bai Jamjuree;
+    color: black;
+    border: none;
+    outline: none;
+    line-height: 1.5; 
+    display: block;
+    background: transparent;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.Login::placeholder{
+    color: #B4B4B4;
+}
+
+.wrap-Login{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #B4B4B4;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    align-self: center;
+}
+
+
+
+
+@media all and (max-device-width: 440px){
+    .texta{
+        font-size: 12px;
+    }
+    .textl{
+        font-size: 14px;
+    }
+    .textb{
+        font-size: 25px;
+    }
+}
+@media all and (max-device-width: 320px){
+    .texta{
+        font-size: 10px;
+    }
+    .textl{
+        font-size: 12px;
+    }
+    .textb{
+        font-size: 20px;
+    }
+}

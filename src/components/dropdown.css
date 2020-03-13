@@ -1,0 +1,20 @@
+.box{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+select{
+    background-color: transparent;
+    border:0px;
+}
+option{
+    background-color: #FED124;
+    Border: none;
+    margin-left: 100px;
+    outline: none;
+}
+option:hover {
+    background-color: #ff0909;
+}  
+
+
+
