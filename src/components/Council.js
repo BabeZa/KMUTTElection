@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './card.css';
 import './Font.css';
 import './stepper.css';
+import './Council.css';
 
 class Council extends Component {
   state = {
@@ -29,7 +30,7 @@ class Council extends Component {
           
           
           }}>
-            <div style={{
+            <div class="headerColor" style={{
                 display: 'flex',  
                 alignItems:'center', 
                 flexDirection: "column",
@@ -37,7 +38,6 @@ class Council extends Component {
                 position: '-webkit-sticky',
                 position: 'fixed',
                 top: 0,
-                backgroundColor: "#FED124"
                 
              }}>
                 <div class="containerS" >
@@ -49,16 +49,17 @@ class Council extends Component {
                         <li></li>
                     </ul>
                 </div>
-                <div style={{width: "100%",height: 100,backgroundColor: "#FFFFFF",display: 'flex',justifyContent: 'center',marginTop: 15,border: "3px solid black"}}>
-                      <p class="textM" style={{alignSelf: 'center',textAlign: "center",marginTop: 15}}>{values.Lang === "th" ? "เลือกสภานักศึกษา\nคณะวิศวกรรมศาสตร์" : "Vote for Student Council of Engineering"}</p>
+                <div class="Header">
+                    <h5 class="headM" style={{alignSelf: 'center',textAlign: 'center',marginTop: 10,fontWeight: 'normal',marginBottom: 0}}>{values.Lang === 'th' ? "เลือกสภานักศึกษา" : "Vote for Student Council of"}</h5>
+                    <h5 class="headM" style={{alignSelf: 'center',textAlign: 'center',fontWeight: 'normal'}}>{values.Lang === 'th' ? "คณะวิศวกรรมศาสตร์" : "Engineering"}</h5>
                 </div>
-                <div style={{maxWidth: 600,marginTop: 160,position: 'absolute',width: '100%',display: 'flex',justifyContent: 'flex-end'}}>
+                <div style={{maxWidth: 1050,marginTop: 160,position: 'absolute',width: '100%',display: 'flex',justifyContent: 'flex-end'}}>
                   <div class="count"> {values.people.filter(person => person.select !== '0').length}/{values.people.length}</div>
                 </div>
             </div>  
 
-            <div style={{marginTop: 165,width: "100%",maxWidth: 1000}}>
-              <p class="textS" style={{alignSelf: "center",textAlign: 'center'}}>{values.Lang === "th" ? "โปรดพิจารณาสภานักศึกษาให้ครบทุกคน" : "Please examinate all of the candidate"}</p>
+            <div class="boxCouncil" style={{marginTop: 125,width: "100%",maxWidth: 930}}>
+              <p class="textS" style={{marginTop: 20,alignSelf: "center",textAlign: 'center'}}>{values.Lang === "th" ? "โปรดพิจารณาสภานักศึกษาให้ครบทุกคน" : "Please examinate all of the candidate"}</p>
               <div style={{width: "100%",padding: '0px 5px',flexWrap: 'wrap',display: 'flex',justifyContent: 'center'}}>
                 {values.people.map(person => (
                   <div className='cardC' style={{width:'100%', marginBottom:15,maxHeight: 140}}>
@@ -72,14 +73,13 @@ class Council extends Component {
                       </div>
                       </div>
                     </div>))} 
-
                 </div>
             </div>
             
             
                 
-            <h5 class="textM" style={{color: "#DC2E00"}}>{this.state.press ? !(values.people.filter(person => person.select !== '0').length === values.people.length) ? values.Lang === "th" ? "ยังทำการเลือกไม่เสร็จสิ้น" : "Still in process of voting"  : <br/> : <br/>}</h5>
-            <div style={{marginBottom: 15,}}>
+            <h5 class="textMM" style={{color: "#DC2E00",marginTop: 10}}>{this.state.press ? !(values.people.filter(person => person.select !== '0').length === values.people.length) ? values.Lang === "th" ? "ยังทำการเลือกไม่เสร็จสิ้น" : "Still in process of voting"  : <br/> : <br/>}</h5>
+            <div style={{marginBottom: 25,}}>
               <button className={!(values.people.filter(person => person.select !== '0').length === values.people.length) ? "unconfirmbutton" :  "confirmbutton" } style={{padding: '5px 20px'}} onClick={values.people.filter(person => person.select !== '0').length !== values.people.length ? () => {this.setState({press: true});} : this.continue}>{values.Lang === "th" ? "ยืนยัน" : "Confirm"}</button>
             </div>
           

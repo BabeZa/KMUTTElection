@@ -60,7 +60,7 @@ class Finish extends Component {
               <a href="https://twitter.com/intent/tweet?text=http%3A//google.com/"><img src={twitter} style={{width: 40,alignSelf: "center"}}/></a>
             </div>
             <a class="textS" style={{marginTop: 30,textAlign: "center"}}>{values.Lang === "th" ? "และสามารถติดตามข่าวสารการเลือกตั้งได้ที่" : "For more information, see in facebook page"}</a>
-            <a class="textM" style={{color: '#000000',textDecorationLine: "underline"}} href="https://www.facebook.com/บางมดอยากเลือกตั้ง-111526570306064/">บางมดอยากเลือกตั้ง</a>
+            <a class="textM" style={{color: '#000000',textDecorationLine: "underline"}} href="https://www.facebook.com/KMUTT-Election-111526570306064">KMUTT Election</a>
 
 
         </div>

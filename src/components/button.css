@@ -18,11 +18,12 @@
   border: none;
   color: black;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 10px 0px;
+  border-radius: 15px;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 130px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   font-weight: bold;}
 .confirmbutton:hover  { transform: translateY(-1px);}
 .confirmbutton:active { transform: translateY(2px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);}
@@ -32,12 +33,13 @@
   border: none;
   color: black;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 10px 0px;
+  border-radius: 15px;
   font-size: 20px;
+  width: 130px;
   margin-left: 20px;
   cursor: pointer;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);}
 .wrongbutton:hover  { transform: translateY(-1px);}
 .wrongbutton:active { transform: translateY(2px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);}
 
@@ -102,10 +104,11 @@
   border: none;
   color: black;
   text-align: center;
-  padding: 5px 10px;
-  border-radius: 10px;
+  padding: 10px 0px;
+  border-radius: 15px;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 130px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   font-weight: bold;}
 

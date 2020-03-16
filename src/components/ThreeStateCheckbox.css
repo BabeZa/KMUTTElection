@@ -3,8 +3,8 @@
   border: solid 1px #000000;
   border-radius: 50%;
   display: inline-block;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   
 }
 
@@ -13,8 +13,8 @@
   border: solid 1px #000000;
   border-radius: 50%;
   display: inline-block;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 
 .negative {
@@ -22,19 +22,29 @@
   border: solid 1px #000000;
   border-radius: 50%;
   display: inline-block;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 
 .boxC{
   width: 100%;
-  background-color: #FED124;
+  max-width: 350px;
+  background-color: #FFE16E;
   border-radius: 12px;
-  padding: 4px 8px;
+  padding: 1px 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-top: 8px;
-  
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media all and (max-device-width: 500px){
+  .boxC{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #FED124;
+  }
 }

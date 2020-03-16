@@ -43,8 +43,6 @@ class Information extends Component {
           display: 'flex',  
           alignItems:'center', 
           flexDirection: "column",
-          
-          
           }}>
             <ReactModal 
                isOpen={this.state.showModal}
@@ -52,11 +50,12 @@ class Information extends Component {
                onRequestClose={this.handleCloseModal}
                className="ModalInfo"
                overlayClassName="Overlay"
-            >
-              <h5 class="headM" style={{textAlign: 'center',}}>{values.Lang === 'th' ? "ขั้นตอนการเลือกตั้ง" : "Election Process"}</h5>
-              <button className="acknowledge" style={{alignSelf: 'center',alignItems: 'center',width: 200,marginRight: 0}} onClick={this.continue}>{values.Lang === 'th' ? "รับทราบ" : "Acknowledge"}</button>
-              {/* <button onClick={this.handleCloseModal}>Close Modal</button> */}
+              >
+                <h5 class="headM" style={{textAlign: 'center',}}>{values.Lang === 'th' ? "ขั้นตอนการเลือกตั้ง" : "Election Process"}</h5>
+                <button className="acknowledge" style={{alignSelf: 'center',alignItems: 'center',width: 200,marginRight: 0}} onClick={this.continue}>{values.Lang === 'th' ? "รับทราบ" : "Acknowledge"}</button>
+                {/* <button onClick={this.handleCloseModal}>Close Modal</button> */}
             </ReactModal>
+
             <div class="containerS" >
               <ul class="progressbar">
                 <li class="active"></li>
@@ -71,7 +70,7 @@ class Information extends Component {
                 display: 'flex',  
                 flexDirection: "column",
                 alignItems:'center', 
-                maxWidth: 400,
+                maxWidth: 450,
                 width: '90%',
                 backgroundColor: "#ffffff",
                 borderRadius: 40,
@@ -91,9 +90,9 @@ class Information extends Component {
             <h5 class="textM" style={{marginTop: 30,}}>{values.Lang === 'th' ? "ข้อมูลของคุณถูกต้องหรือไม่" : "Your information accurated?"}</h5>
             <div style={{ 
                 display: 'flex', 
-                marginTop: 25,
+                marginTop: 20,
                 flexDirection: "row",
-                maxWidth: 800,
+                maxWidth: 650,
                 width: '100%',
                 justifyContent:'center',
                 justifyContent: "space-around",
@@ -102,8 +101,8 @@ class Information extends Component {
                 
             }}>
               
-                <button class="wrongbutton"   style={{padding: "5px 0px",width: 106}} onClick={this.InfoE}>{values.Lang === 'th' ? "ไม่ถูกต้อง" : "No"}</button>
-                <button class="confirmbutton" style={{padding: "5px 0px",width: 106}} onClick={this.handleOpenModal}>{values.Lang === 'th' ? "ถูกต้อง" : "Yes"}</button>
+                <button class="wrongbutton"   onClick={this.InfoE}>{values.Lang === 'th' ? "ไม่ถูกต้อง" : "No"}</button>
+                <button class="confirmbutton" onClick={this.handleOpenModal}>{values.Lang === 'th' ? "ถูกต้อง" : "Yes"}</button>
             </div>
           
         </div>

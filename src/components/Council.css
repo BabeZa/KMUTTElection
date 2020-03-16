@@ -10,11 +10,11 @@
     border: 3px solid black;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.25);
 }
-.boxO{
+.boxCouncil{
     display: 'flex';
     align-items: center;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 80px;
     width: 85%;
     background-color: white;
     border: 2px solid black;
@@ -22,11 +22,13 @@
 }
 
 
+
+
 @media all and (max-device-width: 500px){
     .Header {   box-shadow: 0 0px 0px 0 rgba(0,0,0,0);  }
-    .boxO{
-        background-color: white;
-        border: 2px solid black;
+    .boxCouncil{
+        background-color: transparent;
+        border: none;
         margin-top: 30px;
         border-radius: 40px;
     }

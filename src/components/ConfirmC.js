@@ -44,25 +44,27 @@ class ConfirmC extends Component {
                 display: 'flex',
                 marginTop: 30,
                 flexDirection: "column",
-                maxWidth: 500,
-                width: '100%',      
+                maxWidth: 850,
+                width: '100%',
+                    
             }}>
                 
-                <p class="headL" style={{color: "#000000",textAlign: "center",marginTop: 10}}>{values.Lang === "th" ? "ยืนยันการเลือกสภานักศึกษา" : "Voting for Student Council confirmation"}</p>
+                <p class="headL" style={{color: "#000000",textAlign: "center",marginTop: 5}}>{values.Lang === "th" ? "ยืนยันการเลือกสภานักศึกษา" : "Voting for Student Council confirmation"}</p>
                 <div style={{ 
                     marginLeft: 20,
                     marginRight: 20,
                     display: 'flex', 
-                    marginTop: 15,
-                    flexDirection: "column",
+                    marginTop: 5,
                     backgroundColor: "#FFFFFF",
-                    borderRadius: 25,
+                    borderRadius: 35,
                     border: "2px solid black",
-                    padding: "5px 10px 15px 10px ",
+                    padding: "20px 5px 25px 5px ",
+                    flexWrap: 'wrap',
+                    justifyContent: 'center' 
                 }}>
                     {values.people.map(person => (
                         <div className="boxC" key={person.id}>
-                          <label class="textM" style={{alignSelf: 'center'}}>{values.Lang === "th" ? person.name : person.nameEng}</label>
+                          <label class="textS" style={{alignSelf: 'center',marginTop: 6,marginBottom: 0}}>{values.Lang === "th" ? person.name : person.nameEng}</label>
                           <span className={person.select}></span>
                         </div>))
                       }
@@ -74,8 +76,8 @@ class ConfirmC extends Component {
                           
                 </div>
                   
-                <p class="textM" style={{marginTop: 30,fontSize:20,marginLeft: 20,marginRight: 20,textAlign: "center"}}>
-                {values.Lang === "th" ? "เมื่อยืนยันแล้ว จะไม่สามารถแก้ไขได้อีก คุณจะยืนยันการเลือกหรือไม่" : "ฺAfter click comfirm, this action can’t be undo Do you want to comfirm your vote?"}</p>
+                <p class="textMM" style={{marginTop: 20,marginLeft: 20,marginRight: 20,textAlign: "center",marginBottom: 0}}>{values.Lang === "th" ? "เมื่อเสร็จสิ้นแล้ว จะไม่สามารถแก้ไขได้อีก" : "After click comfirm, this action can’t be undo."}</p>
+                <p class="textMM" style={{marginLeft: 20,marginRight: 20,textAlign: "center"}}>{values.Lang === "th" ? "คุณจะยืนยันการเลือกหรือไม่" : "Do you want to comfirm your vote?"}</p>
             </div>
 
             <div style={{ 

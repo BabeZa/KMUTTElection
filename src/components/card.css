@@ -7,10 +7,10 @@
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     font-weight: bold;}
 .accept:hover   { transform: translateY(-1px);  }
-.accept:active  { transform: translateY(1px); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);}
+.accept:active  { transform: translateY(1px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
   
 .notaccept{
     background-color: #F86767;
@@ -21,10 +21,10 @@
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     font-weight: bold;}
 .notaccept:hover { transform: translateY(-1px); }
-.notaccept:active { transform: translateY(1px); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);}
+.notaccept:active { transform: translateY(1px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
   
 .nocomment{
     background-color: #C4C4C4;
@@ -35,10 +35,10 @@
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     font-weight: bold;}
 .nocomment:hover  { transform: translateY(-1px);}
-.nocomment:active { transform: translateY(1px); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);}
+.nocomment:active { transform: translateY(1px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
 
 .selected{
     background-color: #FFFFFF;
@@ -49,15 +49,16 @@
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);}
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
 .selected:hover { transform: translateY(-1px); }
-.selected:active { transform: translateY(1px); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);}
+.selected:active { transform: translateY(1px); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
 
 
 .cardC{
     display: flex;
     background-color: #ffffff;
     border-radius: 20px;
+    border: 2px solid black;
     padding: 10px;
     max-width: 430px;
     margin-left: 10px;
@@ -126,7 +127,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    background-color: #FF9393;
+    background-color: #FFBFBF;
     border: 2px solid black;
     border-radius: 30px;}
 .cardN:hover {   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);   }
@@ -147,6 +148,7 @@
 
 
 @media all and (max-device-width: 500px){
+    .cardC{ border: none;}
     .cardO{
         border-radius: 20px;
         box-shadow: 0 0px 0px 0 rgba(0,0,0,0);

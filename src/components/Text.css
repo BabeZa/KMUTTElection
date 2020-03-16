@@ -3,10 +3,12 @@
 .textSS {   font-size: 16px;    }
 .textSM {   font-size: 20px;    }
 .textS  {   font-size: 20px;    }
+.textMM {   font-size: 23px;    }
 .textM  {   font-size: 25px;    }
 .textL  {   font-size: 30px;    }
 .textXL {   font-size: 20px;    }
 .headS  {   font-size: 20px;    font-weight: bold;    }
+.headMM {   font-size: 25px;    }
 .headM  {   font-size: 30px;    font-weight: bold;    }
 .headL  {   font-size: 35px;    font-weight: bold;    }
 .headXL {   font-size: 40px;    font-weight: bold;    }
@@ -21,14 +23,17 @@
 
 
 @media all and (max-device-width: 640px){
+    .headMM {   font-size: 23px;    }
     .headM  {   font-size: 27px;    font-weight: bold;    }
     .headL  {   font-size: 30px;    font-weight: bold;    }
     .headXL {   font-size: 37px;    font-weight: bold;    }
     .textSSM{   font-size: 16px;    }
     .textSM {   font-size: 18px;    }
+    .textMM {   font-size: 21px;    }
 }
 
 @media all and (max-device-width: 375px){
+    .headMM {   font-size: 22px;    }
     .headM  {   font-size: 25px;    font-weight: bold;    }
     .headL  {   font-size: 27px;    font-weight: bold;    }
     .headXL {   font-size: 35px;    font-weight: bold;    }
@@ -36,6 +41,7 @@
     .textSS {   font-size: 16px;    }
     .textSM {   font-size: 17px;    }
     .textS  {   font-size: 18px;    }
+    .textMM {   font-size: 20px;    }
     .textM  {   font-size: 22px;    }
     .infoM  {   font-size: 22px;    }
     .infoS  {   font-size: 18px;    }
@@ -43,6 +49,7 @@
 }
 
 @media all and (max-device-width: 320px){
+    .headMM {   font-size: 18px;    }
     .headM  {   font-size: 20px;    font-weight: bold;    }
     .headL  {   font-size: 23px;    font-weight: bold;    }
     .headXL {   font-size: 30px;    font-weight: bold;    }
@@ -50,6 +57,7 @@
     .textSS {   font-size: 14px;    }
     .textSM {   font-size: 14px;    }
     .textS  {   font-size: 15px;    }
+    .textMM {   font-size: 16px;    }
     .textM  {   font-size: 19px;    }
     .infoM  {   font-size: 20px;    }
     .infoS  {   font-size: 16px;    }

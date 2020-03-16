@@ -28,7 +28,7 @@ class Organization extends Component {
             height: '100%',
             justifyContent: "space-between",
             }}>
-              <div style={{
+              <div class="headerColor" style={{
                   display: 'flex',  
                   alignItems:'center', 
                   flexDirection: "column",
@@ -36,7 +36,6 @@ class Organization extends Component {
                   position: '-webkit-sticky',
                   position: 'sticky',
                   top: 0,
-                  backgroundColor: "#FED124",
                   zIndex: 10,
                }}>
                   <div class="containerS" >
@@ -50,7 +49,8 @@ class Organization extends Component {
                   </div>
   
                   <div class="Header">
-                      <h5 class="headM" style={{alignSelf: 'center',textAlign: 'center',marginTop: 15}}>{values.Lang === 'th' ? "เลือกคณะกรรมการ\nองค์การบริหารองค์การนักศึกษา" : "Vote for Student Administration"}</h5>
+                      <h5 class="headM" style={{alignSelf: 'center',textAlign: 'center',marginTop: 10,fontWeight: 'normal',marginBottom: 0}}>{values.Lang === 'th' ? "เลือกคณะกรรมการ" : "Vote for Student Administration"}</h5>
+                      <h5 class="headM" style={{alignSelf: 'center',textAlign: 'center',fontWeight: 'normal'}}>{values.Lang === 'th' ? "องค์การบริหารองค์การนักศึกษา" : ""}</h5>
                   </div>
               </div>  
               
@@ -84,7 +84,7 @@ class Organization extends Component {
               </div>
                   
               <h5 class="textS" style={{color: "#DC2E00",marginTop: 10}}>{this.state.press ? values.Organ === "" ? values.Lang === "th" ?    "กรุณาทำการเลือกพรรคหรือไม่ประสงค์ลงคะแนน"  : "Please vote for a party or vote no": <br/> : <br/>}</h5>
-            <div style={{marginBottom: 15,}}>
+            <div style={{marginBottom: 25,}}>
                 <button className={values.Organ !==  "" ? "confirmbutton" : "unconfirmbutton" } onClick={values.Organ === "" ? () => {this.setState({press: true});} : this.continue}>{values.Lang === "th" ? "ยืนยัน" : "Confirm"}</button>
             </div>
             

@@ -137,9 +137,10 @@ class InformationE extends Component {
                     value={this.state.phone}
                     onChange={this.onChange}
                     required
+                    style={{boxShadow: "0px 3px 4px rgba(0, 0, 0, 0.2)"}}
                     ></input>
                   <p class="textS" style={{marginBottom: 2,marginTop: 15}}>{values.Lang === 'th' ? "ข้อมูลที่ไม่ถูกต้อง" : "Information that are not accureate"}</p>
-                  <textarea style={{}} name="description" value={this.state.description} onChange={this.onChange} required ></textarea>
+                  <textarea style={{boxShadow: "0px 3px 4px rgba(0, 0, 0, 0.2)"}} name="description" value={this.state.description} onChange={this.onChange} required ></textarea>
                 </div>
 
                 
@@ -157,9 +158,9 @@ class InformationE extends Component {
                 marginBottom: 20,
             }}>
               
-                <button className="wrongbutton"   style={{padding: "5px 20px"}}onClick={this.Info}>{values.Lang === 'th' ? "ย้อนกลับ" : "Back"}</button>
+                <button className="wrongbutton"   onClick={this.Info}>{values.Lang === 'th' ? "ย้อนกลับ" : "Back"}</button>
               
-                <button className={(this.state.phone !== "" && this.state.description !== "") ? "confirmbutton" :  "unconfirmbutton" } style={{padding: '5px 20px'}} onClick={this.check}>{values.Lang === 'th' ? "ส่งข้อความ" : "Send Message"}</button>
+                <button className={(this.state.phone !== "" && this.state.description !== "") ? "confirmbutton" :  "unconfirmbutton" } onClick={this.check}>{values.Lang === 'th' ? "ส่งข้อความ" : "Send Message"}</button>
                 
             </div>
             

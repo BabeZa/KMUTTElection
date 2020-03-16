@@ -1,4 +1,4 @@
-import React, { Component,useState } from 'react';
+import React, { Component } from 'react';
 import KMUTT from './asserts/KMUTT.png';
 import './button.css';
 import './Login.css';
@@ -66,9 +66,6 @@ class Login extends Component {
           flexDirection: "column",
           height: '100vh',
           justifyContent: "space-between",
-          
-        
-          
           }}>
           
           <div style={{marginTop: 5,marginRight: 5,display: 'flex',width: '100%',justifyContent: 'space-between',}}>
@@ -80,7 +77,7 @@ class Login extends Component {
                   <option value="en">English</option>
               </select>
             </div>
-            <img src={KMUTT}/>
+            <img style={{height: 60}} src={KMUTT}/>
           </div>
           
           <div style={{
@@ -92,8 +89,15 @@ class Login extends Component {
             
           }}>
             <div style={{display: 'flex', justifyContent: 'center',flexDirection: "column",}}>
-              <h1 class="headL" style={{fontSize: 40, color: 'back',alignSelf: 'center',marginBottom: 0}}>{values.Lang === 'th' ? "ระบบการเลือกตั้ง" : "Electoral System"}</h1>
-              <p class="textSS" style={{alignSelf: 'center',textAlign: 'center'}}>{values.Lang === 'th' ? "คณะกรรมการองค์การบริหารองค์การนักศึกษาและสภานักศึกษา มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี" : "Student Administration and Student Council of King Mongkut's University of Technology Thonburi"}</p>
+              <h1 class="headL" style={{fontSize: 40, color: 'back',alignSelf: 'center',marginBottom: 0}}
+                >{values.Lang === 'th' ? "ระบบการเลือกตั้ง" : "Electoral System"}</h1>
+              <div style={{flexWrap: 'wrap',flexDirection: 'row',display: 'flex',justifyContent:'center' }}>
+                <p class="textSS" style={{alignSelf: 'center',textAlign: 'center',marginBottom: 0}}
+                  >{values.Lang === 'th' ? "คณะกรรมการองค์การบริหารองค์การนักศึกษาและ" : "Student Administration and Student Council of "}</p>
+                <p class="textSS" style={{alignSelf: 'center',textAlign: 'center',marginBottom: 0}}
+                  >{values.Lang === 'th' ? "สภานักศึกษา มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี" : "King Mongkut's University of Technology Thonburi"}</p>
+              </div>
+              
             </div>
 
             <div style={{marginTop: 30,width: "90%",maxWidth: 400,padding: "15px 20px", backgroundColor: 'white',border: '2px solid black',borderRadius: 30,boxShadow:'0px 4px 4px  rgba(0,0,0,0.25)'}}>
@@ -136,8 +140,8 @@ class Login extends Component {
           </div>
           
           <div style={{  marginBottom: 15,flexDirection: "row", flexWrap:'wrap'}}>
-            <a class="texta" style={{color: '#000000'}}>{values.Lang === 'th' ? "สามารถติดตามข้อมูลข่าวสารเพิ่มเติมได้ที่" : "For more information, see in facebook page"} </a>
-            <a class="textl" style={{color: '#000000'}} href="https://www.facebook.com/บางมดอยากเลือกตั้ง-111526570306064">บางมดอยากเลือกตั้ง</a>
+            <a class="texta" style={{color: '#000000'}}>{values.Lang === 'th' ? "สามารถติดตามข้อมูลข่าวสารเพิ่มเติมได้ที่"  : "For more information, see in facebook page  "} </a>
+            <a class="textl" style={{color: '#000000'}} href="https://www.facebook.com/KMUTT-Election-111526570306064">KMUTT Election</a>
           </div>
               
           

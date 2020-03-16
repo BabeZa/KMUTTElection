@@ -1,5 +1,5 @@
 body{
-    background-color: #FED124;
+    background-color: #FFE16E;
 }
 
 select{
@@ -63,7 +63,11 @@ option:hover{
 }
 
 
-
+@media all and (max-device-width: 640px){
+    body{
+        background-color: #FED124;
+    }    
+}
 
 @media all and (max-device-width: 440px){
     .texta{

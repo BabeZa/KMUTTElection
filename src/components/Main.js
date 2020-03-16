@@ -11,7 +11,7 @@ import Group from './asserts/group.jpg';
 
 export class StepForm extends Component {
     state = {
-        step: 1,
+        step:1,
         Organ: "",
         Lang: "th",
         Organs: [
@@ -20,12 +20,12 @@ export class StepForm extends Component {
             {id: 3,pic: Group, name: 'พรรคใจไว้ที่เขา',nameEng: 'TeJaLom Party', num: '3'},
         ],
         people: [
-            {id: 1,pic: 'https://image.flaticon.com/icons/svg/761/761824.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
+            {id: 1,pic: 'https://image.flaticon.com/icons/svg/761/761824.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: 'positive'},
             {id: 2,pic: 'https://image.flaticon.com/icons/svg/761/761837.svg', name: 'นางสาวชะแว๊บ ชะวู้วว', nameEng: 'Mr. Chavab Chavuu',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '2', select: '0'},
             {id: 3,pic: 'https://image.flaticon.com/icons/svg/761/761840.svg', name: 'นางสาวทาด๊าา ทาแด๊นน', nameEng: 'Mr. Tadaa Tadann',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '3', select: '0'},
             {id: 4,pic: 'https://image.flaticon.com/icons/svg/761/761842.svg', name: 'นายง่วงแล้ว กำลังจะสลบ', nameEng: 'Mr. Nunglao Kamlanjasalub',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
-            {id: 5,pic: 'https://image.flaticon.com/icons/svg/761/761822.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '4', select: '0'},
-            {id: 6,pic: 'https://image.flaticon.com/icons/svg/761/761827.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
+            {id: 5,pic: 'https://image.flaticon.com/icons/svg/761/761822.svg', name: 'นายมะลึก กึกกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '4', select: '0'},
+            {id: 6,pic: 'https://image.flaticon.com/icons/svg/761/761827.svg', name: 'นายมะลึก ก๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
             {id: 7,pic: 'https://image.flaticon.com/icons/svg/761/761847.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
             {id: 8,pic: 'https://image.flaticon.com/icons/svg/761/761842.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},
             {id: 9,pic: 'https://image.flaticon.com/icons/svg/761/761835.svg', name: 'นายมะลึก กึ๊กกึ๋ย', nameEng: 'Mr. Maluk QutQuan',faculty:'วิศวกรรมศาสตร์',Depart:'วิศวกรรมคอมพิวเตอร์',DepartEng:'Computer Engineering',year: '1', select: '0'},

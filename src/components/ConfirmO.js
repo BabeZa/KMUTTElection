@@ -73,21 +73,23 @@ class ConfirmO extends Component {
             
             <div style={{
                 display: 'flex',
-                marginTop: 20,
+                marginTop: 17,
                 flexDirection: "column",
-                maxWidth: 600,
+                maxWidth: 500,
                 width: '100%',      
             }}>
                 
-                <p class="headM" style={{textAlign: "center"}}>{values.Lang === "th" ? "ยืนยันการเลือกคณะกรรมการ\nองค์การบริหารองค์การนักศึกษา" : "Voting for Student Administration\nconfirmation"}</p>
+                <p class="headMM" style={{textAlign: "center",fontWeight: 'normal',marginBottom: 0}}>{values.Lang === "th" ? "ยืนยันการเลือกคณะกรรมการ" : "Voting for Student Administration"}</p>
+                <p class="headMM" style={{textAlign: "center",fontWeight: 'normal'}}>{values.Lang === "th" ? "องค์การบริหารองค์การนักศึกษา" : "confirmation"}</p>
                 {this.showConfirmO()}
                   
-                <p class="textM" style={{marginTop: 20,marginLeft: 20,marginRight: 20,textAlign: "center"}}>{values.Lang === "th" ? "เมื่อยืนยันแล้ว จะไม่สามารถแก้ไขได้อีก คุณจะยืนยันการเลือกหรือไม่" : "After click comfirm, this action can’t be undo Do you want to comfirm your vote?"}</p>
+                <p class="textMM" style={{marginTop: 20,marginLeft: 20,marginRight: 20,textAlign: "center",marginBottom: 0}}>{values.Lang === "th" ? "เมื่อเสร็จสิ้นแล้ว จะไม่สามารถแก้ไขได้อีก" : "After click comfirm, this action can’t be undo."}</p>
+                <p class="textMM" style={{marginLeft: 20,marginRight: 20,textAlign: "center"}}>{values.Lang === "th" ? "คุณจะยืนยันการเลือกหรือไม่" : "Do you want to comfirm your vote?"}</p>
             </div>
 
             <div style={{ 
                 display: 'flex', 
-                marginTop: 20,
+                marginTop: 17,
                 flexDirection: "row",
                 maxWidth: 600,
                 width: '100%',
@@ -95,8 +97,8 @@ class ConfirmO extends Component {
                 justifyContent:'center',
                 justifyContent: "space-around",
             }}>
-                <button className="wrongbutton"   style={{padding: "5px 26px"}} onClick={this.back}>{values.Lang === "th" ? "แก้ไข" : "Back"}</button>
-                <button className="confirmbutton" style={{padding: "5px 15px"}} onClick={this.continue}>{values.Lang === "th" ? "เสร็จสิ้น" : "Confirm"}</button>
+                <button className="wrongbutton"   onClick={this.back}>{values.Lang === "th" ? "แก้ไข" : "Back"}</button>
+                <button className="confirmbutton" onClick={this.continue}>{values.Lang === "th" ? "เสร็จสิ้น" : "Confirm"}</button>
             </div>
           
         </div>
