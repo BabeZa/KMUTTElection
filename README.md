@@ -78,11 +78,11 @@ login
 
 What do you want to use as your public directory? [build]()
 
-? Configure as a single-page app (rewrite all urls to /index.html)? [No].
+? Configure as a single-page app (rewrite all urls to /index.html)? [No]()
 
-? File build/404.html already exists. Overwrite? [No]
+? File build/404.html already exists. Overwrite? [No]()
 
-? File build/index.html already exists. Overwrite? [No]
+? File build/index.html already exists. Overwrite? [No]()
 
 ### `firebase deploy`
 
