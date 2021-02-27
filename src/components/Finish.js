@@ -28,11 +28,11 @@ class Finish extends Component {
                 display: 'flex',
                 flexDirection: "column",
                 alignItems:'center',
-                maxWidth: 800,
+                maxWidth: 700,
                 width: '90%',
                 backgroundColor: "#ffffff",
                 borderRadius: 20,
-                marginTop: 60,
+                marginTop: 40,
                 border: "2px solid black",
                 boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                 padding: "30px 5px"
@@ -59,7 +59,7 @@ class Finish extends Component {
               <img src={facebook} style={{width: 50,alignSelf: "center",marginRight: 10}}/> */}
               <a href="https://twitter.com/intent/tweet?text=http%3A//google.com/"><img src={twitter} style={{width: 40,alignSelf: "center"}}/></a>
             </div>
-            <a class="textS" style={{marginTop: 30,textAlign: "center"}}>{values.Lang === "th" ? "และสามารถติดตามข่าวสารการเลือกตั้งได้ที่" : "For more information, see in facebook page"}</a>
+            <a class="textS" style={{marginTop: 25,textAlign: "center"}}>{values.Lang === "th" ? "และสามารถติดตามข่าวสารการเลือกตั้งได้ที่" : "For more information, see in facebook page"}</a>
             <a class="textM" style={{color: '#000000',textDecorationLine: "underline"}} href="https://www.facebook.com/KMUTT-Election-111526570306064">KMUTT Election</a>
 
 

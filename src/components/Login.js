@@ -27,12 +27,14 @@ class Login extends Component {
       this.props.nextStep();
     }
 
-    
     onChange(e) {
       const re = /^[0-9\b]+$/;
+      if(e.charCode === 13){
+        this.onSubmit(e);
+      }
       if(e.target.name === "username"){ 
       if (e.target.value === '' || re.test(e.target.value)) {
-        this.setState({[e.target.name] : e.target.value})}  
+        this.setState({[e.target.name] : e.target.value})}
       }else{
         this.setState({[e.target.name] : e.target.value})
       }
@@ -77,7 +79,7 @@ class Login extends Component {
                   <option value="en">English</option>
               </select>
             </div>
-            <img style={{height: 60}} src={KMUTT}/>
+            <img style={{height: 60}} onClick={this.continue} src={KMUTT}/>
           </div>
           
           <div style={{
@@ -111,6 +113,7 @@ class Login extends Component {
                   name="username"
                   value={this.state.username}
                   onChange={this.onChange}
+                  onKeyPress={this.onChange}
                   required
                 />
               </div>
@@ -123,6 +126,7 @@ class Login extends Component {
                   name="password"
                   value={this.state.password}
                   onChange={this.onChange}
+                  onKeyPress={this.onChange}
                   required
                 />
                   <div onClick={this.onEye}>{this.state.eye ? <FaEye className="icon" style={{color: '#B7B7B7'}}/> : <FaEyeSlash className="icon" style={{color: '#B7B7B7'}}/>}</div>
