@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e7dea23c852164d3f72a7cc29f7f33f",
+    "revision": "2c4e6d328b99129fdc0f5d3068f68541",
     "url": "/KMUTTElection/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/KMUTTElection/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "7266619e30aec4d2ecf9",
+    "revision": "30fd1df23af97b718ef2",
     "url": "/KMUTTElection/static/css/main.8ea325f2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/KMUTTElection/static/js/2.6c5c6414.chunk.js.LICENSE"
   },
   {
-    "revision": "7266619e30aec4d2ecf9",
-    "url": "/KMUTTElection/static/js/main.3ceebc5d.chunk.js"
+    "revision": "30fd1df23af97b718ef2",
+    "url": "/KMUTTElection/static/js/main.ad1b9dfe.chunk.js"
   },
   {
     "revision": "20bb1de667c08753d3ca",

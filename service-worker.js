@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/KMUTTElection/precache-manifest.3bc1e6ab6d18d077ec69c2d77b411665.js"
+  "/KMUTTElection/precache-manifest.5f69967c1521728c4894282583421edb.js"
 );
 
 self.addEventListener('message', (event) => {
