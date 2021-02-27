@@ -66,3 +66,28 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## firebase
+
+### `firebase login`
+
+login
+
+### `firebase init`
+
+What do you want to use as your public directory? [build]()
+build คือที่อยู่ไฟล์ที่ deploy ได้มาจาก npm run build
+
+? Configure as a single-page app (rewrite all urls to /index.html)? [No]()
+
+? File build/404.html already exists. Overwrite? [No]()
+
+? File build/index.html already exists. Overwrite? [No]()
+พิมพ์ n เพื่อไม่ต้องให้มันเขียนทับไฟล์ที่มีอยู่แล้ว
+
+### `firebase deploy`
+
+npm run build before
+
+[Deploy เว็บไซต์ React ฟรีๆ ด้วย Firebase Hosting](https://devahoy.com/blog/2019/01/how-to-deploy-react-with-firebase-hosting/)
