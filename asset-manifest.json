@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/KMUTTElection/static/css/main.8ea325f2.chunk.css",
+    "main.js": "/KMUTTElection/static/js/main.3ceebc5d.chunk.js",
+    "main.js.map": "/KMUTTElection/static/js/main.3ceebc5d.chunk.js.map",
+    "runtime-main.js": "/KMUTTElection/static/js/runtime-main.36988b7d.js",
+    "runtime-main.js.map": "/KMUTTElection/static/js/runtime-main.36988b7d.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/KMUTTElection/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.6c5c6414.chunk.js": "/KMUTTElection/static/js/2.6c5c6414.chunk.js",
+    "static/js/2.6c5c6414.chunk.js.map": "/KMUTTElection/static/js/2.6c5c6414.chunk.js.map",
+    "index.html": "/KMUTTElection/index.html",
+    "precache-manifest.3bc1e6ab6d18d077ec69c2d77b411665.js": "/KMUTTElection/precache-manifest.3bc1e6ab6d18d077ec69c2d77b411665.js",
+    "service-worker.js": "/KMUTTElection/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/KMUTTElection/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.8ea325f2.chunk.css.map": "/KMUTTElection/static/css/main.8ea325f2.chunk.css.map",
+    "static/js/2.6c5c6414.chunk.js.LICENSE": "/KMUTTElection/static/js/2.6c5c6414.chunk.js.LICENSE",
+    "static/media/Avatar.png": "/KMUTTElection/static/media/Avatar.2efcb640.png",
+    "static/media/KMUTT.png": "/KMUTTElection/static/media/KMUTT.663db208.png",
+    "static/media/check.png": "/KMUTTElection/static/media/check.4fb40fc9.png",
+    "static/media/group.jpg": "/KMUTTElection/static/media/group.7b307b38.jpg",
+    "static/media/instagram.png": "/KMUTTElection/static/media/instagram.097b7749.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.36988b7d.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.6c5c6414.chunk.js",
+    "static/css/main.8ea325f2.chunk.css",
+    "static/js/main.3ceebc5d.chunk.js"
+  ]
+}
